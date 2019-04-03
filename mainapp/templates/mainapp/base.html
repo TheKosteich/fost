@@ -1,0 +1,22 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Добавить в title основные виды предоставляемых услуг - Например:
+                                                                    1) доставка цветов в Санкт Петербурге
+                                                                    2) Оформление свадеб и т.д. -->
+    <title>Цветы и подарки в Санкт Петербурге | Цветочное варенье | Flower jam | Флорист в Санкт Петербурге</title>
+</head>
+<body>
+    <a href="/">Домой</a>
+    <a href="/products/">Цветы</a>
+    <a href="/blog/">Блог</a>
+    <a href="/contacts/">Контакты</a>
+    <div class="container">
+        {% block main %}
+        {% endblock %}
+    </div>
+</body>
+</html>
