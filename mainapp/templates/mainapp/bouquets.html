@@ -1,12 +1,11 @@
+{% extends 'mainapp/base.html' %}
 {% load staticfiles %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% block main %}
+<p>
+    {% for bouquet in bouquets %}
+        <h1>{{ bouquet.name }}</h1>
+        <a href="SOME_URL"><img src="{{ bouquet.image.url }}"></a>
+        <b>{{ bouquet.price }}</b>
+    {% endfor %}
+</p>
+{% endblock %}

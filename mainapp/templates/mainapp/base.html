@@ -1,19 +1,21 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <!-- Добавить в title основные виды предоставляемых услуг - Например:
-                                                                    1) доставка цветов в Санкт Петербурге
-                                                                    2) Оформление свадеб и т.д. -->
     <title>Цветы и подарки в Санкт Петербурге | Цветочное варенье | Flower jam | Флорист в Санкт Петербурге</title>
 </head>
 <body>
-    <a href="/">Домой</a>
-    <a href="/products/">Цветы</a>
-    <a href="/blog/">Блог</a>
-    <a href="/contacts/">Контакты</a>
+    <a href="{% url 'index' %}"><img src="{% static 'img/logo-default.png'%}"></a>
+    <img src="{% static 'img/home-slider-background-img-1.png' %}">
+    <a href="{% url 'products' %}">Букеты</a>
+    <a href="{% url 'compositions' %}">Композиции</a>
+    <a href="{% url 'wedding' %}">Свадьба</a>
+    <a href="{% url 'interior' %}">Интерьеры</a>
+    <a href="{% url 'blog' %}">Блог</a>
+    <a href="{% url 'friends' %}">Друзья</a>
+    <a href="{% url 'contacts' %}">Контакты</a>
     <div class="container">
         {% block main %}
         {% endblock %}
