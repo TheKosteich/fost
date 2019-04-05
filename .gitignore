@@ -2,6 +2,7 @@ media/
 db.sqlite3
 .idea
 mainapp/migrations/
+*.pyc
 
-# include only one file in migrations
+# Exclude from ignorelist files
 !mainapp/migrations/__init__.py
