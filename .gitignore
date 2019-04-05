@@ -1,3 +1,7 @@
 media/
 db.sqlite3
 .idea
+mainapp/migrations/
+
+# include only one file in migrations
+!mainapp/migrations/__init__.py
